@@ -35,6 +35,12 @@ class TreeNode extends React.Component {
         showCheckbox: PropTypes.bool,
         title: PropTypes.string,
         onClick: PropTypes.func,
+        
+        type: PropTypes.string,
+        latLngArr: PropTypes.array,
+        apiPath: PropTypes.string,
+        
+        
     };
 
     static defaultProps = {
@@ -45,6 +51,10 @@ class TreeNode extends React.Component {
         showCheckbox: true,
         title: null,
         onClick: () => {},
+        
+        type: null,
+        latLngArr: null,
+        apiPath: null,
     };
 
     constructor(props) {
